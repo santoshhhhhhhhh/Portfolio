@@ -100,6 +100,13 @@ body {
     overflow: hidden;
 }
 
+.full-width {
+    width: 100%;
+    max-width: none;
+    padding: 0 3vw;
+    box-sizing: border-box;
+}
+
 .profile-section {
     padding: 3rem 2rem;
     border-bottom: 1px solid var(--light-gray);
@@ -205,7 +212,7 @@ h3 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.experience-item:hover, .project-card:hover {
+.experience-item:hover, .project-card:hover, .certification-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
@@ -215,6 +222,20 @@ h3 {
     font-style: italic;
     margin-bottom: 1rem;
     display: block;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--primary-dark);
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    color: var(--primary);
+    transform: translateY(-2px);
 }
 
 ul {
@@ -286,11 +307,11 @@ li {
     .business-header h1 {
         font-size: 2.3rem;
     }
-    
+
     .business-header .title {
         font-size: 1.1rem;
     }
-    
+
     .professional-nav a {
         padding: 0.6rem 1.2rem;
     }
@@ -301,16 +322,16 @@ li {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .contact-info {
         text-align: center;
         justify-content: center;
     }
-    
+
     .professional-nav {
         gap: 1rem;
     }
-    
+
     section {
         padding: 2rem;
     }
@@ -320,41 +341,21 @@ li {
     .business-header h1 {
         font-size: 2rem;
     }
-    
+
     .business-header .title {
         font-size: 1rem;
     }
-    
+
     .skills-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .professional-nav a {
         padding: 0.5rem 1rem;
         font-size: 0.9rem;
     }
-    
+
     section {
         padding: 1.5rem;
     }
-}
-.full-width {
-    width: 100%;
-    max-width: none;
-    padding: 0 3vw;
-    box-sizing: border-box;
-}
-
-.project-link {
-    display: inline-block;
-    margin-top: 1rem;
-    color: var(--primary-dark);
-    font-weight: bold;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.project-link:hover {
-    color: var(--primary);
-    transform: translateY(-2px);
 }
